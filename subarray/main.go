@@ -8,10 +8,6 @@ func main() {
 	fmt.Println(birthday([]int32{2, 2, 1, 3, 2}, 4, 2))
 }
 
-/*
-
- */
-
 func birthday(s []int32, d int32, m int32) int32 {
 	var count int32
 
@@ -29,5 +25,6 @@ func birthday(s []int32, d int32, m int32) int32 {
 			count++
 		}
 	}
+
 	return count
 }
