@@ -13,14 +13,14 @@ func breakingRecords(scores []int32) []int32 {
 	records := []int32{0, 0}
 
 	for i := 0; i < len(scores); i++ {
-		if scores[i] > max {
-			max = scores[i]
-			records[0]++
-		} 
-
 		if scores[i] < min {
 			min = scores[i]
 			records[1]++
+		}
+
+		if scores[i] > max {
+			max = scores[i]
+			records[0]++
 		}
 	}
 
