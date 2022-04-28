@@ -8,11 +8,6 @@ func main() {
 	fmt.Println(migratoryBirds([]int32{1, 2, 3, 4, 5, 4, 3, 2, 1, 3, 4}))
 }
 
-/*
-	count repetead values
-	select the lower one
-*/
-
 func migratoryBirds(arr []int32) int32 {
 	bTypesCount := make([]int32, 5)
 
